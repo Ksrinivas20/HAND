@@ -16,6 +16,18 @@
     padding: 20px;
   }
   
+  /* Avanflix Logo Styles */
+.avanflix-logo-container {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.avanflix-logo {
+  width: 70px;
+}
+
+
   /* Header Styles */
   .header {
     background-color: #333;
@@ -23,14 +35,9 @@
     padding: 20px 0;
     text-align: center;
   }
-  
-  .logo {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .logo img {
-    width: 100px; /* Adjust as needed */
+
+  .hand-logo img {
+    width: 90px; /* Adjust the width as needed */
   }
   
   .title {
@@ -110,7 +117,7 @@
   }
   
   .logo img {
-    width: 100px;
+    width: 70px;
   }
   
   .title {
@@ -136,3 +143,62 @@
     margin-left: auto; /* Pushes the logo to the right */
   }
     
+/* Donor Form Styles */
+.donor-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.donor-form h3 {
+  margin-bottom: 20px;
+}
+
+.donor-form form {
+  display: inline-block;
+  text-align: left;
+}
+
+.donor-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.donor-form input,
+.donor-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.donor-form input[type="file"] {
+  margin-top: 5px;
+}
+
+.donor-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.donor-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Donate Button Styles */
+#donate-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#donate-btn:hover {
+  background-color: #45a049;
+}
