@@ -9,42 +9,43 @@
 </head>
 <body>
 
+<!-- Avanflix Logo -->
+<div class="avanflix-logo-container">
+  <img src="avanflix_logo.jpg" alt="AVANFLIX Logo" class="avanflix-logo">
+</div>
+
 <!-- Header -->
 <header class="header">
     <div class="container">
-      <div class="logo">
-        <img src="hand_logo.png" alt="HAND Logo">
+      <div class="hand-logo">
+        <img src="Hand_logo.png" alt="HAND Logo">
       </div>
       <div class="title">
         <h1>HUMAN ACTION FOR NEED AND DEVELOPMENT</h1>
         <h2>HAND</h2>
       </div>
-      <div class="logo">
-        <img src="avanflix_logo.png" alt="AVANFLIX Logo" class="avanflix-logo">
-      </div>
     </div>
-  </header>
-  
+</header>
 
 <!-- Navbar -->
 <nav class="navbar">
     <div class="container">
       <ul class="nav-links">
-        <li><a href="index.html#home">Home</a></li>
-        <li><a href="index.html#areas-of-impact">Areas Of Impact</a></li>
-        <li><a href="index.html#our-work">Our Work</a></li>
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="index.html#about-us">About Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#areas-of-impact">Areas Of Impact</a></li>
+        <li><a href="#our-work">Our Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about-us">About Us</a></li>
       </ul>
     </div>
-  </nav>
-  
+</nav>
+
 <!-- Home Section -->
 <section class="section" id="home">
   <div class="container">
     <h2>Vision and Mission</h2>
     <p>
-      [Insert Vision and Mission content here]
+      [Vision and Mission appears here]
     </p>
   </div>
 </section>
@@ -54,7 +55,7 @@
   <div class="container">
     <h2>Areas of Impact</h2>
     <p>
-      [Insert Areas of Impact content here]
+      [Areas of Impact appears here]
     </p>
   </div>
 </section>
@@ -64,7 +65,7 @@
   <div class="container">
     <h2>Our Work</h2>
     <p>
-      [Insert Our Work content here]
+      [Our Work appears here]
     </p>
   </div>
 </section>
@@ -74,8 +75,23 @@
   <div class="container">
     <h2>Projects</h2>
     <p>
-      [Insert Projects content here]
+      [Projects content appears here]
     </p>
+    <button id="donate-btn">Click here to Donate</button>
+    <div id="donation-form" style="display: none;">
+      <h3>Donate Now</h3>
+      <form action="submit-donation.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="screenshot">Upload Screenshot:</label><br>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 </section>
 
@@ -84,7 +100,7 @@
   <div class="container">
     <h2>About Us</h2>
     <p>
-      [Insert About Us content here]
+      [About Us content appears here]
     </p>
   </div>
 </section>
@@ -95,6 +111,17 @@
     <p>&copy; 2024 HAND. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  document.getElementById('donate-btn').addEventListener('click', function() {
+    var donationForm = document.getElementById('donation-form');
+    if (donationForm.style.display === 'none' || donationForm.style.display === '') {
+      donationForm.style.display = 'block';
+    } else {
+      donationForm.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
